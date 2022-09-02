@@ -4,32 +4,20 @@
     <title>Universidad Andres Bello - IEEE Student Branch</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" id="bootstrap-css">
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"
+          id="bootstrap-css">
     <link rel="stylesheet" href="./assets/css/ieee.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <script src="https://s3-us-west-2.amazonaws.com/ieeeshutpages/gdpr/settings.js"></script>
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise(json)
-        });
-    </script>
-
-
-<script type="text/javascript">
-$(document).ready(function () {
-$('.navbar-light .dmenu').hover(function () {
-        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
-    }, function () {
-        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
-    });
-});
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </head>
 
 <!-- así se escribe un comentario en html -->
@@ -53,41 +41,48 @@ $('.navbar-light .dmenu').hover(function () {
             <a href="./"><img src="assets/img/logo_unab_ieee.png" alt="IEEE SB UNAB Logo"></a>
         </div>
         <div class="col-6 text-end">
-		<a href="https://www.instagram.com/ramaieeeunab/" class="fa fa-instagram" target="_blank"></a>
-		<a href="mailto:rama.ieee@unab.cl" class="fa fa-envelope" target="_blank"></a>
         </div>
     </div>
 </header>
-
-    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav" style="background-color: #FFFFFF;">
-            <li class="nav-item">
-		<a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="actividades.html">Actividades <span class="sr-only">(actual)</span></a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link" href="noticias.html">Noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-          </ul>
-          <div class="social-part">
-
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <ul id="socialNetworks" class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/ramaieeeunab/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:rama.ieee@unab.cl" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </nav>
-
+    </div>
+</nav>
 
 <main class="container">
 
@@ -100,7 +95,7 @@ $('.navbar-light .dmenu').hover(function () {
 
           <ul>
             <li><h4>Charla introductoria a IEEE EMBS</h4></li>
-		  <img src="assets/img/charla_embs.PNG" alt="Intro. IEEE EMBS" class="center"><br>
+		  <img src="assets/img/activity/charla_embs.PNG" alt="Intro. IEEE EMBS" class="center"><br>
 	          <ul><br>
 			<li>La rama estudiantil IEEE te invita a participar de la charla de introducción a la Engineering in Medicine and Biology Society, a manos de Bryan Alemán a realizarse el día Martes 20 de septiembre desde las 11 a las 12 horas.</li>
 			<li>Expone Bryan Alemán, IEEE EMBS Latam Student Regional Representative.</li>
@@ -110,7 +105,7 @@ $('.navbar-light .dmenu').hover(function () {
 
           <ul>
             <li><h4>Charla introductoria a IEEE CAS</h4></li>
-		  <img src="assets/img/charla_cas.PNG" alt="Intro. IEEE CAS" class="center"><br>
+		  <img src="assets/img/activity/charla_cas.PNG" alt="Intro. IEEE CAS" class="center"><br>
 	          <ul><br>
 			<li>La Rama Estudiantil IEEE UNAB te invita a participar de la charla de introducción a la Circuit and Systems Society a realizarse el día Jueves 18 de agosto a las 16:00hrs.</li>
 			<li>Expone Victor Grimblatt, Ph.D.</li>
@@ -127,7 +122,7 @@ $('.navbar-light .dmenu').hover(function () {
         </div>
           <ul>
             <li><h4>Internet of Things Day 2021</h4></li>
-		  <img src="assets/img/iotday_2021.jpg" alt="IoT Day" class="center"><br>
+		  <img src="assets/img/activity/iotday_2021.jpg" alt="IoT Day" class="center"><br>
 	          <ul><br>
 			<li>La rama organiza evento virtual en conmemoración al día del internet de las cosas (Internet of Things) el 09 de abril de 2021.</li>
 			<li>Se cuenta con presentación de Austral-Robotics, Robotec y Taller de MCI Electronics.</li>
@@ -143,7 +138,7 @@ $('.navbar-light .dmenu').hover(function () {
         </div>
           <ul>
             <li><h4>RNR 2020</h4></li>
-		  <img src="assets/img/rnr2020.PNG" alt="RNR 2020" class="center"><br>
+		  <img src="assets/img/activity/rnr2020.PNG" alt="RNR 2020" class="center"><br>
 	          <ul><br>
 			<li>Las ramas de Universidad de Antofagasta y Universidad Andrés Bello organizan la Reunión Nacional de Ramas (RNR) IEEE 2020 en formato virtual desde el 03 al 05 de agosto de 2020.</li>
 			<li>Instagram del evento: <a href="https://www.instagram.com/rnr_ua.unab_2020/" target="_blank">ig.com/rnr_ua.unab_2020</a></li>

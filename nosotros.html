@@ -4,32 +4,21 @@
     <title>Universidad Andres Bello - IEEE Student Branch</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" id="bootstrap-css">
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"
+          id="bootstrap-css">
     <link rel="stylesheet" href="./assets/css/ieee.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <script src="https://s3-us-west-2.amazonaws.com/ieeeshutpages/gdpr/settings.js"></script>
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise(json)
-        });
-    </script>
-
-
-<script type="text/javascript">
-$(document).ready(function () {
-$('.navbar-light .dmenu').hover(function () {
-        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
-    }, function () {
-        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
-    });
-});
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </head>
 
 <!-- así se escribe un comentario en html -->
@@ -53,180 +42,283 @@ $('.navbar-light .dmenu').hover(function () {
             <a href="./"><img src="assets/img/logo_unab_ieee.png" alt="IEEE SB UNAB Logo"></a>
         </div>
         <div class="col-6 text-end">
-		<a href="https://www.instagram.com/ramaieeeunab/" class="fa fa-instagram" target="_blank"></a>
-		<a href="mailto:rama.ieee@unab.cl" class="fa fa-envelope" target="_blank"></a>
         </div>
     </div>
 </header>
-
-    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav" style="background-color: #FFFFFF;">
-            <li class="nav-item">
-		<a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros <span class="sr-only">(actual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="actividades.html">Actividades</a>
-            </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="noticias.html">Noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-          </ul>
-          <div class="social-part">
-
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <ul id="socialNetworks" class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/ramaieeeunab/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:rama.ieee@unab.cl" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </nav>
-
+    </div>
+</nav>
 
 <main class="container">
-    <div class="row">
+    <section id="boardMembers" class="row">
+        <h2 class="pb-1">Directiva 2022</h2>
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/jcordero.jpg" class="img-fluid rounded-start" alt="Chair">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Javier Cordero Valderrama</h5>
+                            <h6 class="card-subtitle">Presidente</h6>
+                            <p class="card-text">Estudiante de Mag. en Ciencias de la Computación.</p>
+                            <p class="card-text">j.corderovalderrama@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark" href="mailto:j.corderovalderrama@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/avatarf.png" class="img-fluid rounded-start" alt="Vice-Chair">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Constanza Irarrázabal Puelle</h5>
+                            <h6 class="card-subtitle">Vice-Presidente y Sec. General</h6>
+                            <p class="card-text">Estudiante de Ing. en Automatización y Robótica.</p>
+                            <p class="card-text">c.irarrzabalpuelle@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:c.irarrzabalpuelle@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/avatarh.png" class="img-fluid rounded-start" alt="Tesorero">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Víctor Milla Antezana</h5>
+                            <h6 class="card-subtitle">Tesorero</h6>
+                            <p class="card-text">Estudiante de Ing. en Automatización y Robótica.</p>
+                            <p class="card-text">v.millaantezana@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:v.millaantezana@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/avatarf.png" class="img-fluid rounded-start" alt="Asistente General">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Mei Lee Barretto</h5>
+                            <h6 class="card-subtitle">Asistente General</h6>
+                            <p class="card-text">Estudiante de Ing. en Automatización y Robótica.</p>
+                            <p class="card-text">m.leebarretto@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:m.leebarretto@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/avatarh.png" class="img-fluid rounded-start"
+                             alt="Coordinador de Actividades">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Camilo Gutiérrez Jara</h5>
+                            <h6 class="card-subtitle">Coordinador de Actividades</h6>
+                            <p class="card-text">Estudiante de Ing. en Automatización y Robótica.</p>
+                            <p class="card-text">c.gutierrezjara1@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:c.gutierrezjara1@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/avatarh.png" class="img-fluid rounded-start" alt="Tesorero">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Daniel Vélez Yzarra</h5>
+                            <h6 class="card-subtitle">Webmaster</h6>
+                            <p class="card-text">Estudiante de Ing. en Automatización y Robótica.</p>
+                            <p class="card-text">d.vlezyzarra@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:d.vlezyzarra@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/msolis.png" class="img-fluid rounded-start" alt="Consejero">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Miguel Solís Cid</h5>
+                            <h6 class="card-subtitle">Consejero</h6>
+                            <p class="card-text">Director de Ing. en Automatización y Robótica</p>
+                            <p class="card-text">miguel.solis@unab.cl</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:miguel.solis@unab.cl">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/team/rmoreno.jpeg" class="img-fluid rounded-start" alt="Mentor">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Roberto Moreno Pérez</h5>
+                            <h6 class="card-subtitle">Mentor</h6>
+                            <p class="card-text">Vice-Chair Geographic Activities Committee Region 9
+                                IEEE Computer Society.</p>
+                            <p class="card-text">Ex-Alumno 2017 - Ing. en Comp. e Inf.</p>
+                            <p class="card-text">r.morenoperez@uandresbello.edu</p>
+                            <p class="card-text"><small class="text-muted">
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:r.morenoperez@uandresbello.edu">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:roberto.moreno@ieee.org">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <a class="btn btn-light btn-outline-dark"
+                                   href="mailto:rmorenp@computer.org">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="othersMembers" class="row pt-5">
+
+        <div class="col-6">
+            <h3 class="pb-1">Integrantes 2022</h3>
+            <dl class="row text-start">
+                <dt class="col-sm-4">Francisco Arévalo Pérez</dt>
+                <dd class="col-sm-8">Estudiante de Ing. en Automatización y Robótica.</dd>
+                <dt class="col-sm-4">José Valdés Pérez</dt>
+                <dd class="col-sm-8">Estudiante de Ing. en Automatización y Robótica.</dd>
+                <dt class="col-sm-4">Juan Valencia Castañeda</dt>
+                <dd class="col-sm-8">Estudiante de Ing. en Automatización y Robótica.</dd>
+            </dl>
+        </div>
+
         <div class="col-6 center">
-		<br>
-            <h3>Directiva 2022</h3>
-		<br>
+            <h3 class="pb-1">Integrantes años anteriores</h3>
+            <dl class="row text-start">
+                <dt class="col-sm-4">Pedro Hurtado Lagos</dt>
+                <dd class="col-sm-8">Integrante Rama 2020-2021.</dd>
+                <dt class="col-sm-4">Camilo Medina Palma</dt>
+                <dd class="col-sm-8">Integrante Rama 2020-2021.</dd>
+                <dt class="col-sm-4">Lithssey Vega Lizana</dt>
+                <dd class="col-sm-8">Integrante Rama 2020-2021.</dd>
+                <dt class="col-sm-4">Leonel Moraga Villar</dt>
+                <dd class="col-sm-8">Integrante Rama 2020-2021.</dd>
+            </dl>
         </div>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/JCordero.jpg" alt="Chair" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Javier Cordero Valderrama</h2>
-        <p class="title">Presidente</p>
-        <p>Estudiante de Mag. en Ciencias de la Computación.</p>
-        <p>j.corderovalderrama@uandresbello.edu</p>
-        <p><button class="button"><a href="mailto:j.corderovalderrama@uandresbello.edu">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/avatarf.png" alt="Vice-Chair" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Constanza Irarrázabal Puelle</h2>
-        <p class="title">Vice-Presidente y Sec. General</p>
-        <p>Estudiante de Ing. en Automatización y Robótica.</p>
-        <p>c.irarrzabalpuelle@uandresbello.edu</p>
-        <p><button class="button"><a href="mailto:c.irarrzabalpuelle@uandresbello.edu">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/avatarh.png" alt="Tesorero" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Víctor Milla Antezana</h2>
-        <p class="title">Tesorero</p>
-        <p>Estudiante de Ing. en Automatización y Robótica.</p>
-        <p>v.millaantezana@uandresbello.edu</p>
-        <p><button class="button"><a href="mailto:v.millaantezana@uandresbello.edu">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/avatarf.png" alt="Asistente General" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Mei Lee Barretto</h2>
-        <p class="title">Asistente General</p>
-        <p>Estudiante de Ing. en Automatización y Robótica.</p>
-        <p>m.leebarretto@uandresbello.edu</p>
-        <p><button class="button"><a href="mailto:m.leebarretto@uandresbello.edu">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/avatarh.png" alt="Coordinador de Actividades" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Camilo Gutiérrez Jara</h2>
-        <p class="title">Coordinador de Actividades</p>
-        <p>Estudiante de Ing. en Automatización y Robótica.</p>
-        <p>c.gutierrezjara1@uandresbello.edu</p>
-        <p><button class="button"><a href="mailto:c.gutierrezjara1@uandresbello.edu">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/avatarh.png" alt="Webmaster" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Daniel Vélez Yzarra</h2>
-        <p class="title">Webmaster</p>
-        <p>Estudiante de Ing. en Automatización y Robótica.</p>
-        <p>d.vlezyzarra@uandresbello.edu</p>
-        <p><button class="button"><a href="mailto:d.vlezyzarra@uandresbello.edu">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/MSolis.png" alt="Consejero" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Miguel Solís Cid</h2>
-        <p class="title">Consejero</p>
-        <p>Director de Ing. en Automatización y Robótica.</p>
-        <p>miguel.solis@unab.cl</p>
-        <p><button class="button"><a href="mailto:miguel.solis@unab.cl">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="assets/img/avatarh.png" alt="Mentor" style="width: 20vw; max-width: 640px;" class = "center">
-      <div class="container">
-        <h2>Roberto Moreno Pérez</h2>
-        <p class="title">Mentor</p>
-        <p>Chair - Chile Center Section IEEE Consultants Network Affinity Group</p>
-        <p>roberto.moreno@ieee.org</p>
-        <p><button class="button"><a href="mailto:roberto.moreno@ieee.org">Contactar</a></button></p>
-      </div>
-    </div>
-  </div>
-
-       <div class="col-6 center">
-		<br>
-            <h3>Integrantes 2022</h3>
-		<br>
-<ul>
-  <li><b>Francisco Arévalo Pérez</b>: Estudiante de Ing. en Automatización y Robótica</li>
-  <li><b>José Valdés Pérez</b>: Estudiante de Ing. en Automatización y Robótica</li>
-  <li><b>Juan Valencia Castañeda</b>: Estudiante de Ing. en Automatización y Robótica</li>
-</ul>
-        </div>
-
-       <div class="col-6 center">
-		<br>
-            <h3>Integrantes años anteriores</h3>
-		<br>
-<ul>
-  <li><b>Pedro Hurtado Lagos</b>: Integrante Rama 2020-2021</li>
-  <li><b>Camilo Medina Palma</b>: Integrante Rama 2020-2021</li>
-  <li><b>Lithssey Vega Lizana</b>: Integrante Rama 2020-2021</li>
-  <li><b>Leonel Moraga Villar</b>: Presidente Rama 2020-2021</li>
-</ul>
-        </div>
-
-</div>
-    </div>
+    </section>
 </main>
 <footer id="footer">
     <p class="footer-util"><a href="http://www.ieee.org/index.html" id="u-home">Home</a> &#160;|&#160; <a
